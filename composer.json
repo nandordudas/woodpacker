@@ -2,13 +2,8 @@
   "name": "workspace/woodpacker",
   "type": "project",
   "license": "proprietary",
-  "autoload": {
-    "psr-4": {
-      "Workspace\\Woodpacker\\": "src/"
-    }
-  },
   "scripts": {
-    "dev": "php -S localhost:8081 -t ./public"
+    "dev": "php -S localhost:8080 -t ./public"
   },
   "authors": [
     {
@@ -20,13 +15,24 @@
       "email": "dev.csaba.nagy@gmail.com"
     }
   ],
-  "require-dev": {
-    "symfony/var-dumper": "*"
-  },
-  "minimum-stability": "stable",
   "require": {
     "php": ">=8.2",
     "ext-pdo": "*",
     "psr/http-message": "^2.0"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.15",
+    "symfony/var-dumper": "^6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Woodpacker\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
   }
 }

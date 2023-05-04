@@ -1,0 +1,32 @@
+{
+  "name": "workspace/woodpacker",
+  "type": "project",
+  "license": "proprietary",
+  "autoload": {
+    "psr-4": {
+      "Workspace\\Woodpacker\\": "src/"
+    }
+  },
+  "scripts": {
+    "dev": "php -S localhost:8081 -t ./public"
+  },
+  "authors": [
+    {
+      "name": "Nandor Dudas",
+      "email": "nandor.dudas@gmail.com"
+    },
+    {
+      "name": "Csaba Nagy",
+      "email": "dev.csaba.nagy@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "symfony/var-dumper": "*"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.2",
+    "ext-pdo": "*",
+    "psr/http-message": "^2.0"
+  }
+}
